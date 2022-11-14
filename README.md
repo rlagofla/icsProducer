@@ -60,7 +60,7 @@
 
 不知道 `.csv` 也没事，直接用 Excel 做也可以，只要最后保存的时候选择 `csv`
 
-![[win保存截图.png|400]] ![[mac保存截图.png|200]]
+<img src="pictures/win.png" width="50%"> <img src="pictures/mac.png" width="40%">
 
 ## 学校上下课时间
 
