@@ -5,13 +5,6 @@
 #include <string>
 
 
-class myString: public std::string {
-public:
-    myString(): std::string() {}
-    myString(const char* chars): std::string(chars) {}
-    size_type size() { return 1; }
-};
-
 #ifdef _WIN32
 #define CHSET system("chcp 65001")
 #else
