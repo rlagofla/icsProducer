@@ -140,6 +140,8 @@ g++ -std=gnu++17 -o icsProducer main.cpp Csv.cpp SchoolSchedules.cpp SchoolTimet
 
 # Epilogue
 
+还有很多基本的异常处理没去做，等我学了 C++ 异常处理
+
 希望能把这个课表相关的 icsProducer 变为一个“插件”，属于一个新主体“CalendarToolbox”，能够处理更加通用的日程
 
 希望能做成一个 web 应用，并且 `ics` 可以用订阅的方式导入，不过具体怎么实施我还不晓得
