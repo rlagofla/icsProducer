@@ -13,9 +13,11 @@ int SchoolSchedules::export_ics(const std::string& path) {
     std::ofstream output(path);
     output << "BEGIN:VCALENDAR\n"
               "VERSION:2.0" << std::endl;
-
+    
+    int cnt = 1;
     for(const auto& schedule : _table){
         output << "BEGIN:VEVENT" << std::endl;
+        output << "UID:fromRlagofla" << cnt << std::endl;
         // SUMMARY
 		auto cell = schedule.at(0);
 		if(cell.empty()) cell = "Lorem";
@@ -63,6 +65,7 @@ int SchoolSchedules::export_ics(const std::string& path) {
         // DESCRIPTION
         output << "DESCRIPTION:" << schedule.at(7) << std::endl
                << "END:VEVENT" << std::endl;
+        ++cnt;
     }
 
 
